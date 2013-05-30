@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div>
+	<%= link_to "Index", main_app.root_path %> | <%= link_to "Products", rails_engine_overrides.products_path %>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
